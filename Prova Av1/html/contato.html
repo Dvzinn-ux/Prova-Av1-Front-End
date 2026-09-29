@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato e Pré-Matrícula</title>
+</head>
+<body>
+
+    <header>
+        <h1>Natação e Suas Utilidades</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="beneficios.html">Benefícios</a></li>
+                <li><a href="modalidades.html">Modalidades</a></li>
+                <li><a href="seguranca.html">Segurança e Dicas</a></li>
+                <li><a href="contato.html">Contato e Matrícula</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ficha de Pré-Matrícula e Nível</h2>
+            <p>Preencha os campos abaixo para solicitar uma aula experimental gratuita.</p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <p>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </p>
+
+                <p>
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </p>
+
+                <p>
+                    <label for="estilo-preferido">Estilo de Interesse:</label>
+                    <input type="text" id="estilo-preferido" name="estilo-preferido" list="lista-estilos" placeholder="Escolha ou digite...">
+                    <datalist id="lista-estilos">
+                        <option value="Crawl / Livre">
+                        <option value="Costas">
+                        <option value="Peito">
+                        <option value="Borboleta">
+                        <option value="Hidroginástica">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="frequencia">Dias de treino desejados por semana:</label>
+                    <input type="range" id="frequencia" name="frequencia" min="1" max="5" value="3">
+                </p>
+
+                <p>
+                    <label for="atestado">Envie seu Atestado Médico Clínico (PDF ou Imagem):</label>
+                    <input type="file" id="atestado" name="atestado" required>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar Solicitação</button>
+                    <button type="reset">Limpar Formulário</button>
+                </p>
+                 <!-- 
+                Dificuldade que encontrei: Tentei fazer com que o os controles ficasse visivelmente mais intuitivos, no entanto, descobri que isso exige 
+                scripts em JavaScript, que não é permitido, então optei por manter o formulário simples e funcional.
+                -->
+            </form>
+        </section>
+    </main>
+<hr>
+    <footer>
+        <p>-Portal da Natação.</p>
+    </footer>
+
+</body>
+</html>
